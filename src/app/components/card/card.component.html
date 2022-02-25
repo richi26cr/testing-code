@@ -1,0 +1,20 @@
+<div class="card-cmp">
+    <div class="card mb-3" *ngIf="dataSelected != null">
+        <div class="row g-0">
+            <div class="title-container">
+                <h3 class="card-title">{{dataSelected.title}}</h3>
+            </div>
+            <div id="card-detail" class="col-md-6">
+                <div class="card-body">
+                    <p class="card-text">{{dataSelected.description}}</p>
+                </div>
+            </div>
+            <div id="card-image" class="col-md-4">
+                <img [src]="dataSelected.image" class="img-fluid rounded-start" [alt]="dataSelected.title">
+                <div>
+                    <p class="image-text">{{dataSelected.imgTitle}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

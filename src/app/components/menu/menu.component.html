@@ -1,0 +1,10 @@
+<div class="menu-cmp">
+    <ul class="nav">
+        <li *ngFor="let data of menuData " class="nav-item" (click)="onClick(data) ">
+            <a [ngClass]="{active: isActiveMenuItem(data)}" class="nav-link">{{data.title}}</a>
+            <div class="hrcontainer">
+                <hr [ngClass]="{active: isActiveMenuItem(data)}">
+            </div>
+        </li>
+    </ul>
+</div>
